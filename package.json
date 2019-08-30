@@ -1,0 +1,24 @@
+{
+  "name": "email-router",
+  "version": "1.0.0",
+  "description": "Receives, modifies and sends emails",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "nettivanne",
+    "giosg"
+  ],
+  "author": "Tino Kaartovuori",
+  "license": "ISC",
+  "dependencies": {
+    "imap": "^0.8.19",
+    "inbox": "^1.1.59",
+    "mail-listener2": "^0.3.1",
+    "mail-listener4": "^1.1.3",
+    "mail-listener5": "^2.0.0",
+    "nodemailer": "^6.3.0",
+    "xoauth2": "^1.2.0"
+  }
+}

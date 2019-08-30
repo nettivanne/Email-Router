@@ -1,0 +1,47 @@
+<html>
+
+<head>
+  <style>
+    @font-face {
+      font-family: "futura-pt";
+      src: url("https://use.typekit.net/af/cf3e4e/000000000000000000010095/27/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=i4&v=3") format("woff2"), url("https://use.typekit.net/af/cf3e4e/000000000000000000010095/27/d?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=i4&v=3") format("woff"), url("https://use.typekit.net/af/cf3e4e/000000000000000000010095/27/a?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=i4&v=3") format("opentype");
+      font-style: normal;
+      font-weight: 700;
+    }
+
+    @font-face {
+      font-family: "futura-pt";
+      src: url("https://use.typekit.net/af/ae4f6c/000000000000000000010096/27/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n3&v=3") format("woff2"), url("https://use.typekit.net/af/ae4f6c/000000000000000000010096/27/d?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n3&v=3") format("woff"), url("https://use.typekit.net/af/ae4f6c/000000000000000000010096/27/a?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n3&v=3") format("opentype");
+      font-style: bold;
+      font-weight: 400;
+    }
+    }
+
+    ;
+  </style>
+</head>
+
+<body style="background-color: white; font-family: 'futura-pt', sans-serif; font-weight: 400;">
+
+  <div style="display: flex; align-items: center;">
+    <img style="flex-basis: 66px; height: 37px; padding-right: 8px;" src="https://i.imgur.com/g95vWxv.png" href="https://nettivanne.fi">
+    <h2 style="display: flex;">Uusi yhteydenottopyyntö!</h2>
+  </div>
+  <div style="padding-bottom: 10px; line-height:0;">
+    <p><b>Nimi:</b> ${name}</p>
+    <p><b>Sähköposti:</b> ${email}</p>
+    <p><b>Puhelinnumero:</b> ${phone}</p>
+    <p><b>Ajoneuvo:</b> ${vehicle}</p>
+    <p><b>Lähetetty:</b> ${created}</p>
+    <p><b>Viesti:</b></p>
+    <div style="padding-top: 3px; padding-bottom: 10px;">
+      <pre>
+      <p style="font-family:'futura-pt', sans-serif; font-size:18px; white-space: pre-line; line-height: 1"><b>${message}</b></p>
+    </pre>
+    </div>
+    <div style="background-color:red; color:white; padding:12px">
+      <br><b>Viimeksi vieraillut sivuilla:</b></br>
+      <ol>${last_pages_list}</ol>
+    </div>
+</body>
+</html>
